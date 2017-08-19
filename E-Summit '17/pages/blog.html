@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blogs</title>
+	<link rel="shortcut icon" href="../img/logo-final.png" type="image/x-icon"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="../css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <!-- Responsive -->
+	<link href="../css/responsive.css" rel="stylesheet">
+	<!-- Login Modal -->
+	<link href="../css/login.css" rel="stylesheet">
+	<!--Font awesome -->
+	<link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
+	<!--Modal Login/Signup-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">	
+				<img src="../img/login.png">
+				</div>
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- NavBar -->
+	<!-- NavBar -->
+	<nav class="navbar sidebar" role="navigation">
+    <div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar" style="background-color:white;"></span>
+				<span class="icon-bar" style="background-color:red;"></span>
+				<span class="icon-bar" style="background-color:white;"></span>
+			</button>
+			<img class="logo" src="../logo-final.png" style="padding-top:10px;">
+			<a class="navbar-brand" href="#" style="padding-right:38px;">E-Cell NIT Raipur</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home red"></span></a></li>
+				<li><a href="vision.html">Vision<span style="font-size:16px;" class="pull-right hidden-xs showopacity 	glyphicon glyphicon-education"></span></a></li>
+				 <li><a href="events.html">Events<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-dashboard"></span></a></li>
+				<li>
+						<a href="team.html">Team<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+					  </li>
+				<li><a href="sponsor.html">Sponsors<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-usd"></span></a></li>
+				<li><a href="mentor.html">Mentors<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-blackboard"></span></a></li>
+				<li><a href="speaker.html">Speakers<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-bullhorn"></span></a></li>
+				 <li class="active"><a href="#">Blogs<span style="font-size:16px;color:white" class="pull-right hidden-xs showopacity glyphicon glyphicon-dashboard"></span></a></li>
+					<li><a class="btn login"  role="button" data-target="#login-modal" data-toggle="modal">Login/Sign-Up<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-log-in"></span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<!-- Content-->
+	<div class="main">
+	<section>
+	<div style="color: #fff;background-color:black;padding:50px 15px;text-align:left;">
+   <div class="text-center">
+				<h2>Blog</h2>
+				<hr style="width:20%;"><br><br>
+				<p><p><h2>Coming soon</h2>
+ </div>
+ </section>
+<section class="footer">
+	<center><h5><strong>© E-Cell, NIT Raipur</strong></h5></center>
+</section>
+	    <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  	<script src="../js/login.js"></script>
+	</div>
+	</body>
+		  
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="../css/custom.css">
+	  <link rel="stylesheet" href="../css/main.css">
+	  <link rel="stylesheet" href="style.css">
+	  <!-- Login Modal -->
+	<link href="../css/login.css" rel="stylesheet">
+      <title>E-Cell:Blogs</title>
+	  <meta charset="utf-8"> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:200,700" rel="styesheet">
+	</head>
+	<body style="background-color:#1A1C1F">
+	<!--Modal Login/Signup-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">	
+				<img src="../img/login.png">
+				</div>
+                <div id="div-forms">
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- NavBar -->
+	<!-- NavBar -->
+	<nav class="navbar sidebar" role="navigation">
+    <div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar" style="background-color:white;"></span>
+				<span class="icon-bar" style="background-color:red;"></span>
+				<span class="icon-bar" style="background-color:white;"></span>
+			</button>
+			<img class="logo" src="../logo-final.png" style="padding-top:10px;">
+			<a class="navbar-brand" href="#" style="padding-right:38px;">E-Cell NIT Raipur</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home red"></span></a></li>
+				<li><a href="vision.html">Vision<span style="font-size:16px;" class="pull-right hidden-xs showopacity 	glyphicon glyphicon-education"></span></a></li>
+				 <li><a href="events.html">Events<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-dashboard"></span></a></li>
+				 <li><a href="team.html">Team<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+			    <li class="active"><a href="#">Blogs<span style="font-size:16px;color:white" class="pull-right hidden-xs showopacity glyphicon glyphicon-dashboard"></span></a></li>
+					<li><a class="btn login"  role="button" data-target="#login-modal" data-toggle="modal">Login/Sign-Up<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-log-in"></span></a></li>
+				
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<!-- Content-->
+	<div class="main">
+	<div class="wrapper">
+	    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                <div class="card">
+				   <div class="card-content">
+                    <img class="card-img-top" src="image1.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title text-primary">Jeff Bezos</h4>
+                        <div class="meta">
+                            <p class="text-info">In 1999 Time Magazine named Bezos its 1999 Person of the Year.</p>
+                        </div>
+                        <div class="card-text">
+                            Just a few years back, the scenario was such that whenever one hears the word ‘SHOPPING’ the very first picture that used to come to mind was that of a person holding a bag and wandering to outlets all around.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="glyphicon glyphicon-time"></span> Posted by Aman Bhalla
+                        <span><i class=""></i>On 20th May,2017</span>
+					 </div>
+					 </div><div class="linking">
+					<a href="#" class="btn btn-primary">Go to Blog plage</a>
+					</div>
+                    </div>
+                </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                <div class="card">
+				   <div class="card-content">
+                    <img class="card-img-top" src="image2.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title text-primary">'5 GOLDEN TIPS TO GET THE FUNDING FOR UR STARTUP'</h4>
+                        <div class="meta">
+                            <p class="text-info">Funding is what makes a startup mark a change in this world!</p>
+                        </div>
+                        <div class="card-text">
+                            Almost 65 percent of the Indian population are millennial, (young people aged between 20-35). This huge segment is full of aspirations and energy, very dynamic and ready to take on the world.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="glyphicon glyphicon-time"></span> Posted by Aman Bhalla
+                        <span><i class=""></i>On 20th May,2017</span>
+					 </div>
+					 </div><div class="linking">
+					<a href="#" class="btn btn-primary">Go to Blog plage</a>
+					</div>
+                    </div>
+                </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                <div class="card">
+				   <div class="card-content">
+                    <img class="card-img-top" src="image3.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title text-primary">ELON MUSK AND A SUSTAINABLE MOVE</h4>
+                        <div class="meta">
+                            <p class="text-info">Goals of SolarCity, Tesla Motors, and SpaceX</p>
+                        </div>
+                        <div class="card-text">
+                            Elon Reeve Musk (born June 28, 1971) is a South African-born Canadian-American business magnate, engineer and inventor.
+He is the founder, CEO and CTO of SpaceX; co-founder, CEO and product architect of Tesla Motors; co-founder and chairman of SolarCity.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="glyphicon glyphicon-time"></span> Posted by Aman Bhalla
+                        <span><i class=""></i>On 20th May,2017</span>
+					 </div>
+					 </div><div class="linking">
+					<a href="#" class="btn btn-primary">Go to Blog plage</a>
+					</div>
+                    </div>
+                </div>
+        
+
+        </div>
+</div>
+			</div>
+	</div>
+	    <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="js/custom.js"></script>
+	  	<script src="../js/login.js"></script>
+	</div>
+	</body>
+		  
+</html>

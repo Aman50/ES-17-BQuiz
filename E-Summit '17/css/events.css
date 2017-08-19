@@ -1,0 +1,81 @@
+
+section li{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+section{
+	font-size:15px !important;
+}
+.img-responsive {
+    margin: 0 auto;
+	padding-bottom:10px;
+}
+#myCarousel .btn{
+	margin-bottom:30px !important;
+	
+}
+#myCarousel{
+	background-color:red;
+	
+}
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 10px;
+}
+
+.section h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	top:40px;
+	right:40px;
+	background-color:#06C;
+	color:#fff;
+	border-radius:50px;
+	text-align:center;
+	z-index:999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
